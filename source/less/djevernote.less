@@ -1,0 +1,63 @@
+// Bootstrap Base
+@import "bootstrap";
+
+// App Variables
+@import "partials/_variables";
+
+// Fonts
+@import url(//fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic);
+@import url(//fonts.googleapis.com/css?family=Montserrat:400,700);
+// @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@import "vendor/glyphicons-social";
+@import "vendor/font-awesome/font-awesome";
+
+@import "vendor/nprogress";
+@import "vendor/pnotify";
+
+// Pages
+@import "partials/_login";
+@import "partials/_home";
+@import "partials/_apitest";
+
+body {
+  padding-top: 50px;
+}
+
+p, label, .label {
+  font-weight: normal;
+}
+
+.panel-headlines,
+.panel-article,
+.panel-evernote {
+  .panel-body {
+    min-height: 487px;
+  }
+}
+
+// Loading Stuff
+.loading {
+  display: block;
+
+  .spinner {
+    display: block;
+    .square(18px);
+    margin: 0 auto;
+    border: 2px solid transparent;
+    border-top-color: @brand-info;
+    border-left-color: @brand-info;
+    border-radius: 50%;
+
+    .animation(loading-spinner 800ms linear infinite);
+  }
+}
+
+@-webkit-keyframes loading-spinner {
+  0%   { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes loading-spinner {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+

@@ -1,0 +1,25 @@
+{
+  "name": "ag",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "DEBUG=ag ./bin/www"
+  },
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.6.4",
+    "cookie-parser": "^1.3.2",
+    "debug": "^1.0.4",
+    "express": "^4.8.4",
+    "handlebars-precompiler": "^1.0.4",
+    "hogan-express": "^0.5.2",
+    "less-middleware": "^1.0.3",
+    "lodash": "^2.4.1",
+    "morgan": "^1.2.2",
+    "serve-favicon": "^2.0.1",
+    "static-favicon": "^2.0.0-alpha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.dowjones.net/grubera/------"
+  }
+}

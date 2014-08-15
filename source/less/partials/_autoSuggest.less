@@ -1,0 +1,66 @@
+// Auto Suggest
+
+// .searchBox {
+//   margin-top: 10px;
+//   text-align: right;
+//   width: 30%;
+// }
+
+.dj_emg_autosuggest_results {
+  background: #fff;
+  padding: 0;
+  z-index: 30;
+  margin-top: 0;
+  box-shadow: 0px 1px 4px rgba(50, 50, 50, 0.75);
+}
+
+.dj_emg_autosuggest_results table {
+  width: 100%
+}
+
+.ac_helpRow td {
+  padding: 4px;
+  padding-bottom: 10px;
+}
+
+.ac_helpRow .ac_helpResult {
+  display: none
+}
+
+.ac_helpRow .ac_helpText {
+  color: #999;
+  font-weight: bold;
+}
+
+.dj_emg_autosuggest_viewall td {
+  padding: 10px 0 6px 4px;
+  color: #333;
+  font-weight: bold;
+  border: none !important;
+}
+
+.ac_descriptor {
+  padding: 5px;
+  color: @gray;
+}
+
+.ac_descriptor strong {
+  color: @brand-info;
+}
+
+.dj_emg_autosuggest_even td,
+.dj_emg_autosuggest_odd td {
+  background-color: #fff
+}
+
+.dj_emg_autosuggest_even.dj_emg_autosuggest_over td,
+.dj_emg_autosuggest_odd.dj_emg_autosuggest_over td {
+  background-color: @gray-lighter;
+  cursor: pointer;
+}
+
+.ac_helpRow.dj_emg_autosuggest_even,
+.ac_helpRow.dj_emg_autosuggest_over {
+  background: none;
+  cursor: default;
+}

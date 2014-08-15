@@ -1,0 +1,33 @@
+{
+  "name": "dj-evernote",
+  "version": "0.0.1",
+  "authors": [
+    "Adam Gruber <adam.gruber@dowjones.com>"
+  ],
+  "description": "Express App to demo Evernote integration with Factiva",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.2.0",
+    "highlightjs": "~8.0.0",
+    "bootstrapValidator": "~0.4.5",
+    "requirejs": "~2.1.11",
+    "jquery": "~2.1.1",
+    "fontawesome": "~4.1.0",
+    "moment": "~2.6.0",
+    "pnotify": "~2.0.1",
+    "rangy": "~1.2.3",
+    "backbone": "~1.1.2",
+    "handlebars": "~1.3.0",
+    "nprogress": "~0.1.6"
+  }
+}

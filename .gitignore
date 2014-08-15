@@ -1,0 +1,7 @@
+/node_modules
+/test
+/bower_components
+/public/stylesheets/*.css
+/views/dot
+
+npm-debug.log

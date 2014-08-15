@@ -1,0 +1,92 @@
+.article-list {
+  margin: 0
+}
+
+.pagination-controls {
+  .clearfix();
+  a {
+    color: @gray;
+    text-shadow: none;
+    padding: 0;
+
+    .fa {
+      position: relative;
+      top: 1px;
+    }
+
+    &:hover {
+      color: @gray-darker;
+      text-decoration: none;
+    }
+  }
+}
+
+.headlines {
+  .headline {
+    position: relative;
+    border-top: solid 1px @gray-lighter;
+    padding-top: 6px;
+    margin-top: 6px;
+
+    a {
+      display: block;
+      margin-right: 30px;
+      text-decoration: none;
+      color: @text-color;
+
+      &:hover {
+        h4 {
+          color: @brand-primary;
+        }
+      }
+    }
+
+    .headline-title {
+      font-family: @font-family-serif;
+      margin-top: 2px;
+      font-size: 16px;
+      line-height: 1.2;
+      margin-bottom: 4px;
+      .transition(color .1s linear);
+    }
+
+    .headline-meta {
+      margin: 0;
+      font-size: 11px;
+      line-height: 15px;
+      color: @gray-light;
+    }
+
+    .btn {
+      position: absolute;
+      top: 10px;
+      right: 0;
+      height: 20px;
+      border: none;
+      padding: 0;
+      color: @gray-light;
+      &:hover {
+        color: @brand-primary;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+
+    &.selected {
+      .headline-title {
+        color: @evernote-green-dark;
+      }
+    }
+
+    // &:first-child {
+    //   padding-top: 0;
+    //   margin-top: 0;
+    //   border-top: none;
+    //   .btn {
+    //     top: 0;
+    //   }
+    // }
+
+  }
+}

@@ -1,0 +1,64 @@
+/* API Test Page */
+
+.apitest-wrap {
+  padding-top: 15px;
+
+  .response-output {
+    max-height: 644px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    pre{
+      padding: 0;
+      font-size: 11px;
+      border: none;
+    }
+  }
+
+  .api-forms {
+    .panel-heading {
+      padding: 0;
+      a {
+        display: block;
+        padding: 10px 15px;
+      }
+    }
+
+    form {
+      .clearfix();
+
+      h5 {
+        .clearfix();
+        color: @gray-light;
+        margin-top: 0;
+        margin-bottom: 15px;
+        padding-bottom: 6px;
+        border-bottom: 1px solid @gray-lighter;
+        font-family: @font-family-serif;
+        span {
+          float: right;
+          padding-top: .3em;
+          font-family: @font-family-sans-serif;
+        }
+      }
+
+      .form-group.optional {
+        label {
+          color: @gray-light;
+        }
+        label:after {
+          content: 'OPTIONAL';
+          .label;
+          background-color: lighten(#000, 80%);
+          margin-left: 10px;
+        }
+      }
+    }
+
+  }
+
+}
+
+label.disabled {
+  .opacity(.65);
+  cursor: default;
+}
