@@ -10,16 +10,8 @@
       <a class="navbar-brand" href="/">{{title}}</a>
     </div>
     <div class="navbar-collapse collapse">
-    {{#user}}
-      <p class="navbar-text navbar-right user-info">{{username}}<span class="social evernote"></span></p>
-    {{/user}}
-    {{^user}}
-      <p class="navbar-text navbar-right user-info not-logged-in"><a href="/oauth">Log In</a><span class="social evernote"></span></p>
-    {{/user}}
       <ul class="nav navbar-nav">
         <li class="{{#navActive.home}}active{{/navActive.home}}"><a href="/">Home</a></li>
-        <li class="{{#navActive.api}}active{{/navActive.api}}"><a href="/apitest">API Test</a></li>
-        <li><a href="/clear">Demo Sign Out</a></li>
       </ul>
     </div><!--/.navbar-collapse -->
   </div>
