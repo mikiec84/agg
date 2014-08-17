@@ -5,4 +5,4 @@ module.exports = {
     home: "partials/_home",
     searchNav: "partials/_searchNav"
   }
-}
+};

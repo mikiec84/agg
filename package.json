@@ -1,8 +1,8 @@
 {
-  "name": "ag",
+  "name": "agg",
   "version": "0.0.0",
   "scripts": {
-    "start": "DEBUG=ag ./bin/www"
+    "start": "DEBUG=agg ./bin/www"
   },
   "main": "app.js",
   "dependencies": {
@@ -15,11 +15,10 @@
     "less-middleware": "^1.0.3",
     "lodash": "^2.4.1",
     "morgan": "^1.2.2",
-    "serve-favicon": "^2.0.1",
-    "static-favicon": "^2.0.0-alpha"
+    "serve-favicon": "^2.0.1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.dowjones.net/grubera/------"
+    "url": "https://github.com/adamgruber/agg"
   }
 }

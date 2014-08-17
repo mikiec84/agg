@@ -1,10 +1,10 @@
 {
-  "name": "dj-evernote",
+  "name": "agg",
   "version": "0.0.1",
   "authors": [
-    "Adam Gruber <adam.gruber@dowjones.com>"
+    "Adam Gruber <adamgruber@me.com>"
   ],
-  "description": "Express App to demo Evernote integration with Factiva",
+  "description": "Personal site",
   "moduleType": [
     "node"
   ],
