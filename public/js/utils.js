@@ -1,8 +1,7 @@
 define([
   'jquery',
-  'pnotify',
-  'globalConfig'
-], function ($, PNotify, GlobalConfig) {
+  'pnotify'
+], function ($, PNotify) {
   var Utils = {
     // Return the document's cookies as an object of name/value pairs.
     // Assume that cookie values are encoded with encodeURIComponent().
@@ -58,7 +57,7 @@ define([
         },
         nonblock: {
           nonblock: true,
-          nonblock_opacity: .2
+          nonblock_opacity: 0.2
         }
       };
 
@@ -78,7 +77,7 @@ define([
       new PNotify(notifyOpts);
     }
 
-  }
+  };
 
   return Utils;
 });

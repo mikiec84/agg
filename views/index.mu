@@ -2,7 +2,10 @@
 <link rel='stylesheet' href='/stylesheets/agg.css' />
 {{/yield-styles}}
 
-
+<div class="container-fluid">
+  {{> searchNav}}
+  {{> home}}
+</div>
 
 {{#yield-scripts}}
   <!--<script src="/templates.js"></script>-->

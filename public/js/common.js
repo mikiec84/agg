@@ -19,21 +19,8 @@ requirejs.config({
       'pnotify.nonblock': 'pnotify/pnotify.nonblock',
       'pnotify.buttons': 'pnotify/pnotify.buttons',
       'rangy': 'rangy/rangy-core',
-      'factivaCommon': '//widgets.dowjones.com/componentrendering/1.0/common',
       'templates': 'templates',
-      'utils': 'js/utils',
-      'globalConfig': 'js/globalConfig',
-      'SearchView': 'js/views/SearchView',
-      'NotebookModel': 'js/models/NotebookModel',
-      'NotebookSelectorView': 'js/views/NotebookSelectorView',
-      'NoteListView': 'js/views/NoteListView',
-      'HeadlinesModel': 'js/models/HeadlinesModel',
-      'HeadlinesView': 'js/views/HeadlinesView',
-      'ArticleModel': 'js/models/ArticleModel',
-      'ArticleView': 'js/views/ArticleView',
-      'NoteModalView': 'js/views/NoteModalView',
-      'CreateModalView': 'js/views/CreateModalView',
-      'CreateModalModel': 'js/models/CreateModalModel'
+      'utils': 'js/utils'
     },
     shim: {
       'jquery.bs': ['jquery'],
