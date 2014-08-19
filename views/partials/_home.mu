@@ -1,1 +1,1 @@
-This is other stuff.
+<section class="container-fluid">This is other stuff.</section>

@@ -10,6 +10,7 @@ requirejs.config({
       ],
       'jquery.bs': 'bootstrap/dist/js/bootstrap.min',
       'jquery.bsValidator': 'bootstrapValidator/dist/js/bootstrapValidator.min',
+      'jquery.typeahead': 'typeahead.js/dist/typeahead.bundle.min',
       'highlightjs': 'highlightjs/highlight.pack',
       'handlebars': 'handlebars/handlebars.runtime.min',
       'nprogress': 'nprogress/nprogress',
@@ -25,6 +26,7 @@ requirejs.config({
     shim: {
       'jquery.bs': ['jquery'],
       'jquery.bsValidator': ['jquery'],
+      'jquery.typeahead': ['jquery'],
       'highlightjs': {
         exports: 'hljs'
       },
