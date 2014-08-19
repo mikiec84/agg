@@ -6,13 +6,10 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var lessMiddleware = require('less-middleware');
-var hbs = require('handlebars-precompiler');
 var config = require('./config');
 
-var routes = require('./routes/index');
-
 var app = express();
-var router = express.Router();
+var router = require('./router');
 
 var bootstrapPath = path.join(__dirname, 'bower_components', 'bootstrap');
 
@@ -47,40 +44,6 @@ app.use(express.static(path.join(__dirname, 'bower_components')));
 app.use('/fonts', express.static(path.join(bootstrapPath, 'fonts')));
 app.use('/templates', express.static(path.join(__dirname, 'views', 'templates')));
 app.use(router);
-
-//Routes
-router.get('/', routes.index);
-
-// Notes REST API
-// router.get('/apitest', function (req, res) {
-//   res.render('apitest', {
-//     navActive: {
-//       api: true
-//     },
-//     title: 'DJ Evernote API Test',
-//     bodyStyle: 'apitest-page',
-//     user: req.session.user
-//   });
-// });
-// router.get('/api/notebooks', notes.getNotebooks);
-// router.get('/api/tags', notes.getTags);
-// router.get('/api/notes/:guid', notes.getNotesByNotebook);
-// router.get('/api/note/:guid', notes.getNoteById);
-// router.post('/api/note', notes.createNote);
-// router.post('/api/note/:guid', notes.updateNote);
-// router.delete('/api/note/:guid', notes.deleteNote);
-// router.post('/api/related', notes.getRelatedItems);
-
-
-// Precompile Templates
-router.get('/templates.js', function(req, res, next) {
-  res.type('application/javascript');
-  res.send(hbs.do({
-    min: true,
-    fileRegex: /\.mu$/,
-    templates: [path.join(__dirname, 'views', 'templates')]
-  }));
-});
 
 /// catch 404 and forward to error handler
 app.use(function(req, res, next) {
