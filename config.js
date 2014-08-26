@@ -4,6 +4,7 @@ module.exports = {
     navbar: "partials/_navbar",
     home: "partials/_home",
     searchNav: "partials/_searchNav",
-    about: "partials/_about"
+    about: "partials/_about",
+    project: "partials/_project"
   }
 };
