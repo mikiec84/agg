@@ -1,0 +1,37 @@
+// Portfolio Section
+.portfolio {
+  padding: 15px;
+  background-color: lighten(@body-bg, 70%);
+}
+.project {
+  @img-size: 220px;
+  @border-clr: shade(@body-bg, 40%);
+  @border-width: 10px;
+  .make-sm-column(3);
+
+  // image
+  .project-image-cnt {
+    .square(@img-size);
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+
+    .project-image-thumb {
+      .square(100%);
+      // border-radius: @img-size;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      border: 2px solid @border-clr;
+      border-radius: 50%;
+      .lh-blur(1);
+    }
+    .project-image-overlay {
+      .square(100%);
+      // background-color: rg;
+      position: absolute;
+      top: 0;
+      border: 10px solid @border-clr;
+      border-radius: 50%;
+    }
+  }
+}

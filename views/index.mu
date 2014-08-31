@@ -2,7 +2,7 @@
 <link rel='stylesheet' href='/stylesheets/agg.css' />
 {{/yield-styles}}
 
-{{> searchNav}}
+{{> intro}}
 {{> home}}
 
 {{#yield-scripts}}

@@ -1,4 +1,4 @@
-<section class="container-fluid">
+<section class="portfolio">
   <div class="row">
     {{#portfolio}}
       {{#projects}}

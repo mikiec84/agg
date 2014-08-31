@@ -1,5 +1,8 @@
 <section class="project">
-  <div class="thumb" style="background-image:url(/images/{{bgImage}});"></div>
+  <div class="project-image-cnt">
+    <div class="project-image-thumb" style="background-image:url(/images/{{bgImage}});"></div>
+    <div class="project-image-overlay"></div>
+  </div>
   <h3>{{projectName}}</h3>
   <p>{{description}}</p>
   <p>Role:
