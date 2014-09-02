@@ -2,10 +2,10 @@
 module.exports = {
   partials: {
     navbar: "partials/_navbar",
-    home: "partials/_home",
-    searchNav: "partials/_searchNav",
+    intro: "partials/_intro",
     about: "partials/_about",
+    portfolio: "partials/_portfolio",
     project: "partials/_project",
-    intro: "partials/_intro"
+    resume: "partials/_resume"
   }
 };

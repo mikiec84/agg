@@ -3,7 +3,9 @@
 {{/yield-styles}}
 
 {{> intro}}
-{{> home}}
+{{> about}}
+{{> portfolio}}
+{{> resume}}
 
 {{#yield-scripts}}
   <!--<script src="/templates.js"></script>-->

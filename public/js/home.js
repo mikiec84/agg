@@ -1,4 +1,6 @@
 define([
+  'backbone',
+  './views/SectionView',
   'templates',
   'nprogress',
   'moment',
@@ -6,11 +8,11 @@ define([
   'jquery',
   'jquery.bs',
   'jquery.typeahead'
-], function(Handlebars, NProgress, Moment, Utils, $) {
+], function(Backbone, Section, Handlebars, NProgress, Moment, Utils, $) {
 
   var agg = function () {
-    // DJ.config.debug = true;
-
+    this.routes = ['', 'portfolio', 'resume', 'contact'];
+    this.sections = {};
     // $(document)
     // .ajaxStart(function() {
     //   NProgress.start();
@@ -20,11 +22,15 @@ define([
     // });
 
     // Selectors
+    this.$body = $('body');
+    this.$window = $(window);
 
     // Init Things
     this.initHandlebarsHelpers();
+    this.initSections();
 
     // this.initTypeahead();
+
 
     // Create Model/View Instances
     
@@ -79,6 +85,30 @@ define([
       }
     });
   };
+
+  agg.prototype.onResize = function (e) {
+    console.log(e);
+  };
+
+  agg.prototype.initSections = function () {
+      var route, i;
+
+      // init View for each route
+      for (i = 0; i < this.routes.length; i++) {
+        route = this.routes[i];
+        this.sections['/' + route] = new Section({
+          el: $('#' + (route === '' ? 'intro' : route)),
+          $body: this.$body,
+          $window: this.$window
+        });
+      }
+
+      // set current section and scroll to it, if it's below the fold
+      this.currentSection = location.pathname;
+      if (this.currentSection !== '/') {
+        this.sections[this.currentSection].scroll();
+      }
+    };
 
   return agg;
 });
