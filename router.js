@@ -8,6 +8,7 @@ module.exports = router;
 
 // Define Routes
 router.get('/', routes.index);
+router.get('/svc/projects', routes.getProjects);
 
 
 // Precompile Templates

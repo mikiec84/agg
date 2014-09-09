@@ -1,13 +1,18 @@
 define([
   'backbone',
+  'templates',
   'jquery'
-], function (Backbone, $) {
-  var Project = Backbone.Model.extend({
+], function(Backbone, Handlebars, $) {
+  var ProjectModel = Backbone.Model.extend({
     defaults: {
-      name: "Evernote Demo",
-      description: "Best demo evar!!!!11",
-      thumbnailImg: "evernote-screen.png"
+      name: '',
+      description: '',
+      thumbImageUrl: '',
+      code: true,
+      design: true,
+      url: ''
     }
+
   });
-  return Project;
+  return ProjectModel;
 });

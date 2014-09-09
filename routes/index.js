@@ -1,4 +1,5 @@
-// home page
+var projects = require('../projects.json');
+
 exports.index = function(req, res) {
   res.render('index', {
     title: 'ADAM GRUBER',
@@ -14,20 +15,10 @@ exports.index = function(req, res) {
       {
         title: 'Resume'
       }]
-    },
-    portfolio: {
-      projects: [{
-        projectName: "Evernote Demo",
-        description: "Best demo evar!!!!11",
-        bgImage: "evernote-screen.png"
-      },
-      {
-        projectName: "Factiva Newsletter Builder"
-      },
-      {
-        projectName: "DJX"
-      }
-      ]
     }
   });
+};
+
+exports.getProjects = function (req, res) {
+  res.send(projects);
 };

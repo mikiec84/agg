@@ -1,5 +1,9 @@
 define([
   'backbone',
+  './models/PortfolioCollection',
+  './views/PortfolioView',
+  './models/ProjectModel',
+  './views/ProjectView',
   './views/SectionView',
   'templates',
   'nprogress',
@@ -8,18 +12,11 @@ define([
   'jquery',
   'jquery.bs',
   'jquery.typeahead'
-], function(Backbone, Section, Handlebars, NProgress, Moment, Utils, $) {
+], function(Backbone, PortfolioCollection, PortfolioView, ProjectModel, ProjectView, Section, Handlebars, NProgress, Moment, Utils, $) {
 
   var agg = function () {
     this.routes = ['', 'portfolio', 'resume', 'contact'];
     this.sections = {};
-    // $(document)
-    // .ajaxStart(function() {
-    //   NProgress.start();
-    // })
-    // .ajaxStop(function() {
-    //   NProgress.done();
-    // });
 
     // Selectors
     this.$body = $('body');
@@ -33,6 +30,11 @@ define([
 
 
     // Create Model/View Instances
+    var portfolioCollection = new PortfolioCollection();
+    var portfolioView = new PortfolioView({
+      collection: portfolioCollection,
+      el: $('#portfolio')
+    });
     
   };
 

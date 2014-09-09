@@ -15,11 +15,6 @@ requirejs.config({
       'handlebars': 'handlebars/handlebars.runtime.min',
       'nprogress': 'nprogress/nprogress',
       'moment': 'moment/min/moment.min',
-      'pnotify': 'pnotify/pnotify.core',
-      'pnotify.core': 'pnotify/pnotify.core',
-      'pnotify.nonblock': 'pnotify/pnotify.nonblock',
-      'pnotify.buttons': 'pnotify/pnotify.buttons',
-      'rangy': 'rangy/rangy-core',
       'templates': 'templates',
       'utils': 'js/utils'
     },
@@ -33,11 +28,6 @@ requirejs.config({
       'templates': {
         deps: ['handlebars'],
         exports: 'Handlebars'
-      },
-      'pnotify': ['pnotify.core', 'pnotify.nonblock', 'pnotify.buttons'],
-      'rangy': {
-        exports: 'rangy',
-        init: function () { return this.rangy; }
       }
     }
 });
