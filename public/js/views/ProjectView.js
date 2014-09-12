@@ -1,7 +1,8 @@
 define([
   'backbone',
   'templates',
-  'jquery'
+  'jquery',
+  'slick'
 ], function(Backbone, Handlebars, $) {
   var ProjectView = Backbone.View.extend({
 
@@ -21,7 +22,7 @@ define([
       var project = this.model.toJSON();
       var $html = $(this.projectTmpl(project));
       this.setElement($html);
-      this.$parentEl.find('.row').append($html);
+      this.$parentEl.slickAdd($html);
       return this;
     },
 

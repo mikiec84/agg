@@ -1,9 +1,4 @@
 <section id="portfolio" class="portfolio">
-  <div class="row">
-    {{#portfolio}}
-      {{#projects}}
-        {{> project}}
-      {{/projects}}
-    {{/portfolio}}
-  </div>
+  <h2>Portfolio</h2>
+  <div class="portfolio-slider"></div>
 </section>

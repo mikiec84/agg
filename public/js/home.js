@@ -2,17 +2,14 @@ define([
   'backbone',
   './models/PortfolioCollection',
   './views/PortfolioView',
-  './models/ProjectModel',
-  './views/ProjectView',
   './views/SectionView',
   'templates',
   'nprogress',
   'moment',
-  'utils',
   'jquery',
   'jquery.bs',
   'jquery.typeahead'
-], function(Backbone, PortfolioCollection, PortfolioView, ProjectModel, ProjectView, Section, Handlebars, NProgress, Moment, Utils, $) {
+], function(Backbone, PortfolioCollection, PortfolioView, Section, Handlebars, NProgress, Moment, $) {
 
   var agg = function () {
     this.routes = ['', 'portfolio', 'resume', 'contact'];
@@ -24,7 +21,7 @@ define([
 
     // Init Things
     this.initHandlebarsHelpers();
-    this.initSections();
+    // this.initSections();
 
     // this.initTypeahead();
 
@@ -33,7 +30,7 @@ define([
     var portfolioCollection = new PortfolioCollection();
     var portfolioView = new PortfolioView({
       collection: portfolioCollection,
-      el: $('#portfolio')
+      el: $('.portfolio-slider')
     });
     
   };
@@ -110,7 +107,7 @@ define([
       if (this.currentSection !== '/') {
         this.sections[this.currentSection].scroll();
       }
-    };
+  };
 
   return agg;
 });
