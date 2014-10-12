@@ -1,0 +1,15 @@
+{
+  "verbose": true,
+  "watch": [
+    "bin/",
+    "routes/",
+    "views/",
+    "app.js",
+    "config.js",
+    "router.js"
+  ],
+  "ignore": [
+  ],
+  "ext": "js json mu",
+  "exec": "node ./bin/www"
+}
