@@ -1,5 +1,31 @@
 // Navbar
 
 .navbar {
-  background-color: shade(@body-bg, 40%);
+  background-color: @body-bg-dark;
+}
+
+.navbar-brand {
+  background: @body-bg;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.navbar-nav li a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  &:hover {
+    color: @brand-primary;
+    background: @body-bg;
+  }
+}
+.navbar-nav.navbar-right li.ext-link a {
+  font-size: 12px;
+  padding: 7px 10px;
+  color: @body-bg;
+  &:hover {
+    color: @brand-primary;
+    background: @body-bg;
+  }
 }

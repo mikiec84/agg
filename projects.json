@@ -1,34 +1,20 @@
 [
   {
-    "projectName": "Project Title",
+    "projectName": "Factiva / Evernote Integration Demo",
     "description": "Best project evar!!!!11",
     "thumbImageUrl": "evernote-screen.png",
-    "code": true,
-    "design": true,
     "url": "/"
   },
   {
-    "projectName": "Project Title",
+    "projectName": "Mochawesome",
     "description": "Best project evar!!!!11",
     "thumbImageUrl": "evernote-screen.png",
-    "code": true,
-    "design": true,
     "url": "/"
   },
   {
-    "projectName": "Project Title",
+    "projectName": "Factiva Newsletter Builder",
     "description": "Best project evar!!!!11",
     "thumbImageUrl": "evernote-screen.png",
-    "code": true,
-    "design": true,
-    "url": "/"
-  },
-  {
-    "projectName": "Project Title",
-    "description": "Best project evar!!!!11",
-    "thumbImageUrl": "evernote-screen.png",
-    "code": true,
-    "design": true,
     "url": "/"
   }
 ]

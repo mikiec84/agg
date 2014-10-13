@@ -14,28 +14,10 @@ define([
     initSlick: function () {
       var slickOpts = {
         accessibility: true,
-        slidesToShow: 3,
+        slidesToShow: 1,
         slidesToScroll: 1,
         dots: true,
-        slide: 'article',
-        centerMode: true,
-        centerPadding: '10px',
-        responsive: [
-          {
-            breakpoint: 800,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          }
-        ]
+        slide: 'article'
       };
       this.$el.slick(slickOpts);
     },

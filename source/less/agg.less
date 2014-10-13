@@ -26,12 +26,23 @@
 @import "partials/_about";
 @import "partials/_portfolio";
 
+@body-bg-dark: shade(@body-bg, 40%);
+
+@btn-alt-color:              #fff;
+@btn-alt-bg:                 @body-bg-dark;
+@btn-alt-border:             darken(@body-bg-dark, 5%);
+
 body {
   padding-top: 40px;
 }
 
 section {
   position: relative;
+}
+
+// Buttons
+.btn-alt {
+  .button-variant(@btn-alt-color; @btn-alt-bg; @btn-alt-border);
 }
 
 // Loading Stuff

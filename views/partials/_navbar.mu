@@ -16,10 +16,10 @@
         {{/nav.sections}}
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href=""><i class="fa fa-envelope"></i></a></li>
-        <li><a href=""><i class="fa fa-file-text"></i></a></li>
-        <li><a href=""><i class="fa fa-twitter"></i></a></li>
-        <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+        <li class="ext-link"><a href=""><i class="fa fa-2x fa-github-square"></i></a></li>
+        <li class="ext-link"><a href=""><i class="fa fa-2x fa-twitter-square"></i></a></li>
+        <li class="ext-link"><a href=""><i class="fa fa-2x fa-linkedin-square"></i></a></li>
+        <li class="ext-link"><a href=""><i class="fa fa-2x fa-envelope-square"></i></a></li>
       </ul>
     </nav>
   </div>

@@ -9,9 +9,12 @@
     font-size: 90px;
     font-weight: 600;
     border-radius: 50%;
-    border: 6px solid #fff;
+    border: 6px solid @brand-primary;
     line-height: 152px;
     margin: 40px auto;
+    color: @brand-primary;
+    box-shadow: 0 0 8px 2px fade(@body-bg-dark, 90);
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAKCAYAAAB4zEQNAAAAPElEQVQYV2NUVdP7zwAFElJyDC+ePYJxGRhhkjAJZAVgSXQdMD5+SVsHn//I9iDbz4hXknw7CXoFVyAAADXfP1seP+YXAAAAAElFTkSuQmCC);
     .a {
       margin-left: -2px;
     }
@@ -25,7 +28,28 @@
   }
 
   button {
+    @btn-h: 40px;
+    padding: 0;
+    height: @btn-h;
+    overflow: hidden;
     font-weight: 400;
+    border-radius: 4px;
+    line-height: 1;
+    .lh-transition(background .2s ease);
+    span {
+      position: relative;
+      top: 0;
+      padding: 8px 24px;
+      display: block;
+      .lh-transition(all .2s ease);
+    }
+    &:hover {
+      background-color: @brand-primary;
+      span {
+        color: @body-bg-dark;
+        top: -(@btn-h - 5);
+      }
+    }
   }
 
   .lead {
