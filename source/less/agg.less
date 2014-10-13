@@ -38,7 +38,16 @@ body {
 
 section {
   position: relative;
+  min-height: 600px;
 }
+
+em, strong {
+  font-weight: 300;
+  color: @brand-primary;
+}
+
+// Override the default text hightlight color
+.lh-selection(~'color: #e0e950; background: #25262e');
 
 // Buttons
 .btn-alt {
