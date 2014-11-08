@@ -1,6 +1,7 @@
+/*global requirejs */
 requirejs.config({
   baseUrl: '',
-  // urlArgs: "bust=" +  (new Date()).getTime(),
+  urlArgs: 'bust=' +  (new Date()).getTime(),
   paths: {
     'backbone': 'backbone/backbone',
     'underscore': 'underscore/underscore',
@@ -9,26 +10,14 @@ requirejs.config({
       '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min'
     ],
     'jquery.bs': 'bootstrap/dist/js/bootstrap.min',
-    'jquery.bsValidator': 'bootstrapValidator/dist/js/bootstrapValidator.min',
-    'jquery.typeahead': 'typeahead.js/dist/typeahead.bundle.min',
-    'highlightjs': 'highlightjs/highlight.pack',
     'handlebars': 'handlebars/handlebars.runtime.min',
-    'nprogress': 'nprogress/nprogress',
-    'moment': 'moment/min/moment.min',
     'templates': 'templates',
+    'moment': 'moment/min/moment.min',
     'utils': 'js/utils',
     'slick': 'slick.js/slick/slick.min'
   },
   shim: {
     'jquery.bs': ['jquery'],
-    'jquery.bsValidator': ['jquery'],
-    'jquery.typeahead': ['jquery'],
-    'highlightjs': {
-      exports: 'hljs'
-    },
-    'templates': {
-      deps: ['handlebars'],
-      exports: 'Handlebars'
-    }
+    'templates': ['handlebars']
   }
 });
