@@ -17,6 +17,7 @@ router.get('/templates.js', function(req, res, next) {
   res.send(hbs.do({
     min: true,
     fileRegex: /\.mu$/,
-    templates: [path.join(__dirname, 'views', 'templates')]
+    templates: [path.join(__dirname, 'views', 'templates')],
+    amd: true
   }));
 });
