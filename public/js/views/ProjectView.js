@@ -1,9 +1,8 @@
 define([
   'backbone',
-  'templates',
   'jquery',
   'slick'
-], function(Backbone, Handlebars, $) {
+], function(Backbone, $) {
   var ProjectView = Backbone.View.extend({
 
     events: {
@@ -12,7 +11,7 @@ define([
 
     initialize: function (options) {
       this.options = options;
-      this.projectTmpl = Handlebars.templates._project;
+      this.projectTmpl = this.options.templates._project;
       this.parentView = this.options.parentView;
       this.$parentEl = $(this.options.parentEl);
       this.render();
