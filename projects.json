@@ -1,20 +1,61 @@
 [
   {
     "projectName": "Factiva / Evernote Integration Demo",
-    "description": "Best project evar!!!!11",
-    "thumbImageUrl": "evernote-screen.png",
+    "summary": "Demo application built to explore possible workflow for integrating Evernote with Factiva.",
+    "description": [
+      "This proof-of-concept application shows how a Factiva user might save articles or selections to their Evernote account. Upon creating a new note, the user would then have access to a list of related notes from within their organization thus allowing them to research topics more efficiently and surface relevant content that might have otherwise been missed."
+    ],
+    "features": [
+      "Built on the Express.js framework for Node",
+      "RESTful API that hooks into Evernote's API",
+      "Evernote Authentication via OAuth"
+    ],
+    "imageUrl": "evernote-integration-demo.png",
     "url": "/"
   },
+
   {
     "projectName": "Mochawesome",
-    "description": "Best project evar!!!!11",
-    "thumbImageUrl": "evernote-screen.png",
+    "summary": "Mochawesome is a custom reporter for use with the Javascript testing framework, mocha.",
+    "description": [
+      "Developers understand that testing code is a must and command-line reports are great. But how do you share test results with non-developers? Mochawesome was built as a way to visualize test results in a way that anyone can understand. Delve deeper and Mochawesome reveals test code snippets, error stacks, and even timing performance."
+    ],
+    "features": [
+      "At-a-glance view gives a quick summary of test results",
+      "Supports nested describe statements",
+      "Error stacks show exactly where code failed"
+    ],
+    "imageUrl": "mochawesome.png",
     "url": "/"
   },
+
+  {
+    "projectName": "Edwin",
+    "summary": "Edwin is an interactive dashboard that integrates with Jira to give a high-level overview of your current Agile Sprint.",
+    "description": [
+      ""
+    ],
+    "features": [
+      "Cycle through multiple Sprint boards",
+      "Get a clear understanding of Sprint progress",
+      "Issues link directly back to Jira"
+    ],
+    "imageUrl": "mochawesome.png",
+    "url": "/"
+  },
+
   {
     "projectName": "Factiva Newsletter Builder",
-    "description": "Best project evar!!!!11",
-    "thumbImageUrl": "evernote-screen.png",
+    "summary": "Summary",
+    "description": [
+      ""
+    ],
+    "features": [
+      "",
+      "",
+      ""
+    ],
+    "imageUrl": "evernote-screen.png",
     "url": "/"
   }
 ]
