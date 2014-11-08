@@ -8,11 +8,10 @@
 {{> resume}}
 
 {{#yield-scripts}}
-  <!--<script src="/templates.js"></script>-->
   <script>
     require(['js/common'], function (common) {
-      require(['js/home'], function (ENDemo) {
-        new ENDemo();
+      require(['js/home'], function (App) {
+        new App();
       });
     });
   </script>
