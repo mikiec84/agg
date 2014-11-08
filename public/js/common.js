@@ -1,7 +1,7 @@
 /*global requirejs */
 requirejs.config({
   baseUrl: '',
-  urlArgs: 'bust=' +  (new Date()).getTime(),
+  // urlArgs: 'bust=' +  (new Date()).getTime(),
   paths: {
     'backbone': 'backbone/backbone',
     'underscore': 'underscore/underscore',

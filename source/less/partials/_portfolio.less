@@ -1,20 +1,25 @@
 // Portfolio Section
 .portfolio {
-  padding: 15px;
+  @text: #070709;
   background-color: lighten(@body-bg, 70%);
-
-  .portfolio-slider {
-    margin: 0 40px;
-  }
+  color: @text;
 }
+
 .project {
-  @img-size: 220px;
+  @img-size: 600px;
   @border-clr: shade(@body-bg, 40%);
   @border-width: 10px;
 
+  .project-image-cnt {
+    .make-sm-column(8);
+  }
+  .project-info-cnt {
+    .make-sm-column(4);
+  }
+
   // image
   .project-image-cnt {
-    .square(@img-size);
+    height: @img-size;
     position: relative;
     border-radius: 50%;
     overflow: hidden;
@@ -27,19 +32,6 @@
       border: 2px solid @border-clr;
       border-radius: 50%;
       .lh-blur(1);
-    }
-    .project-image-overlay {
-      .square(100%);
-      position: absolute;
-      top: 0;
-      border: 10px solid @border-clr;
-      border-radius: 50%;
-    }
-  }
-
-  &.slick-center {
-    .project-image-cnt .project-image-thumb {
-      .lh-blur(0);
     }
   }
 }

@@ -1,4 +1,4 @@
 <section id="portfolio" class="portfolio">
-  <h2>Portfolio</h2>
+  <h2>Projects</h2>
   <div class="portfolio-slider"></div>
 </section>
