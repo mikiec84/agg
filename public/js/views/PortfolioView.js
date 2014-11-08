@@ -6,7 +6,8 @@ define([
 ], function(Backbone, ProjectView, $) {
   var PortfolioView = Backbone.View.extend({
 
-    initialize: function () {
+    initialize: function (options) {
+      this.options = options;
       this.listenTo(this.collection, 'add', this.addProject);
       this.initSlick();
     },
@@ -26,7 +27,8 @@ define([
       var projectView = new ProjectView({
         model: project,
         parentView: this,
-        parentEl: this.el
+        parentEl: this.el,
+        templates: this.options.templates
       });
       return projectView;
     }
