@@ -6,7 +6,8 @@
     "views/",
     "app.js",
     "config.js",
-    "router.js"
+    "router.js",
+    "projects.json"
   ],
   "ignore": [
   ],
