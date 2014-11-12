@@ -1,15 +1,17 @@
 <article class="project">
   <div class="row">
-    <div class="project-image-cnt">
-      <img class="img-responsive" src="/images/portfolio/{{imageUrl}}" />
+    <div class="project-images-cnt">
+      {{#images}}
+      <div class="project-image"><img class="img-responsive" src="/images/portfolio/{{.}}" /></div>
+      {{/images}}
     </div>
     <div class="project-info-cnt">  
-      <h3>{{projectName}}</h3>
-      <p class="summary">{{summary}}</p>
+      <h3 class="project-name">{{projectName}}</h3>
+      <p class="lead">{{summary}}</p>
       {{#description}}
         <p class="description">{{.}}</p>
       {{/description}}
-      <ul class="features">
+      <ul class="list-unstyled features">
         {{#features}}
           <li class="feature">{{.}}</li>
         {{/features}}

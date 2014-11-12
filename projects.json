@@ -1,7 +1,7 @@
 [
   {
     "projectName": "Factiva / Evernote Integration Demo",
-    "summary": "Demo application built to explore possible workflow for integrating Evernote with Factiva.",
+    "summary": "A prototype application built to explore possible workflow for integrating Evernote with Factiva.",
     "description": [
       "This proof-of-concept application shows how a Factiva user might save articles or selections to their Evernote account. Upon creating a new note, the user would then have access to a list of related notes from within their organization thus allowing them to research topics more efficiently and surface relevant content that might have otherwise been missed."
     ],
@@ -10,13 +10,18 @@
       "RESTful API that hooks into Evernote's API",
       "Evernote Authentication via OAuth"
     ],
-    "imageUrl": "evernote-integration-demo.png",
+    "images": [
+      "evernote1.png",
+      "evernote2.png",
+      "evernote3.png",
+      "evernote4.png"
+    ],
     "url": "/"
   },
 
   {
     "projectName": "Mochawesome",
-    "summary": "Mochawesome is a custom reporter for use with the Javascript testing framework, mocha.",
+    "summary": "A custom reporter for the Javascript testing framework, mocha.",
     "description": [
       "Developers understand that testing code is a must and command-line reports are great. But how do you share test results with non-developers? Mochawesome was built as a way to visualize test results in a way that anyone can understand. Delve deeper and Mochawesome reveals test code snippets, error stacks, and even timing performance."
     ],
@@ -25,37 +30,45 @@
       "Supports nested describe statements",
       "Error stacks show exactly where code failed"
     ],
-    "imageUrl": "mochawesome.png",
+    "images": [
+      "mochawesome.png"
+    ],
     "url": "/"
   },
 
   {
     "projectName": "Edwin",
-    "summary": "Edwin is an interactive dashboard that integrates with Jira to give a high-level overview of your current Agile Sprint.",
+    "summary": "An interactive dashboard that gives a high-level overview of your Jira Agile Sprint.",
     "description": [
-      ""
+      "Edwin was built as a modern replacement for the physical whiteboards used in Agile development. It allows teams to easily see the overall progress of their current Sprint and Jira integration ensures the board is always up-to-date."
     ],
     "features": [
       "Cycle through multiple Sprint boards",
       "Get a clear understanding of Sprint progress",
       "Issues link directly back to Jira"
     ],
-    "imageUrl": "mochawesome.png",
+    "images": [
+      "edwin.png"
+    ],
     "url": "/"
   },
 
   {
     "projectName": "Factiva Newsletter Builder",
-    "summary": "Summary",
+    "summary": "An application for creating professional, attractive newsletters from industry-leading content.",
     "description": [
-      ""
+      "Factiva Newsletter Builder allows users to search the breadth of Factiva content or use their own sources to easily build and deploy newsletters. The intuitive drag-and-drop interface makes structuring the newsletter as simple as moving articles into place. When ready, the user can choose from elegant pre-defined templates or easily create their own and then deploy in multiple formats."
     ],
     "features": [
-      "",
-      "",
-      ""
+      "Easy to use drag-and-drop interface",
+      "Optimized views for each step of newsletter creation",
+      "Read full articles inline and add comments"
     ],
-    "imageUrl": "evernote-screen.png",
+    "images": [
+      "fnb1.png",
+      "fnb2.png",
+      "fnb3.png"
+    ],
     "url": "/"
   }
 ]
