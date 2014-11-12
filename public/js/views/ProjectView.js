@@ -22,6 +22,15 @@ define([
       var $html = $(this.projectTmpl(project));
       this.setElement($html);
       this.$parentEl.slickAdd($html);
+      // this.$el.find('.project-images-cnt').slick({
+      //   swipe: false,
+      //   // adaptiveHeight: true,
+      //   autoplay: true,
+      //   fade: true,
+      //   dots: false,
+      //   draggable: false
+      // });
+
       return this;
     },
 
