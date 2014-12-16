@@ -50,18 +50,13 @@
     margin-top: 10px;
     padding-left: 20px;
     &:before {
+      .fa-icon();
       content: @fa-var-check;
       color: @brand-primary;
-      display: inline-block;
       position: absolute;
       top: 3px;
       left: 0;
-      font-family: FontAwesome;
-      font-style: normal;
-      font-weight: normal;
       line-height: 1;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
     }
     &:first-child {
       margin-top: 0;
@@ -69,6 +64,7 @@
   }
 }
 
+// Tablet 768px and up
 @media (min-width: @screen-sm-min) {
   .project {
     .project-info-cnt {
