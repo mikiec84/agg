@@ -1,8 +1,6 @@
 // Intro Section
 .intro {
   text-align: center;
-  // height: 1000px;
-  margin: 100px 0 0 0;
 
   h1 {
     .square(180px);
@@ -24,7 +22,7 @@
   }
 
   h2 {
-    margin: 0 60px 100px 60px;
+    margin: 0 5px 100px 5px;
   }
 
   .intro-btn {
@@ -51,8 +49,13 @@
       }
     }
   }
+}
 
-  .lead {
-    // font-size: 30px;
+// Tablet 768px and up
+@media (min-width: @screen-sm-min) {
+  .intro {
+    h2 {
+      margin: 0 60px 100px 60px;
+    }
   }
 }
