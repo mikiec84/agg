@@ -1,0 +1,88 @@
+//Resume
+.resume {
+  .resume-wrap {
+    margin-bottom: 30px;
+  }
+
+  .resume-section-header {
+    font-size: 17px;
+    font-weight: 400;
+    padding-bottom: 4px;
+    color: #070709;
+    text-transform: uppercase;
+    margin: 0;
+    &:first-child {
+      margin-top: 15px;
+    }
+  }
+
+  h4 {
+    color: @brand-primary;
+    margin-bottom: 0;
+    border-bottom: 1px solid @body-bg-light;
+    padding-bottom: 3px;
+  }
+
+  h5 {
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-weight: 400;
+  }
+
+  .resume-list {
+    margin-top: 10px;
+  }
+
+  .job-title {
+    border: none;
+    padding-bottom: 0;
+  }
+  
+  .date-range {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 3px;
+    margin-top: 2px;
+    color: @body-bg-light;
+    border-bottom: 1px solid @body-bg-light;
+  }
+
+  .duties {
+    margin-bottom: 20px;
+    li {
+      position: relative;
+      padding-left: 10px;
+      &:before {
+        .fa-icon();
+        content: @fa-var-angle-right;
+        color: @body-bg-light;
+        position: absolute;
+        top: 2px;
+        left: 0;
+      }
+    }
+  }
+  
+}
+
+// Tablet 768px and up
+@media (min-width: @screen-sm-min) {
+  .resume {
+    .job-title {
+      border-bottom: 1px solid @body-bg-light;
+      padding-bottom: 3px;      
+    }
+    .date-range {
+      position: relative;
+      top: -29px;
+      background: @gray-lighter;
+      margin: 0;
+      padding: 4px 8px;
+      font-size: 14px;
+      color: @body-bg-dark;
+      float: right;
+      font-weight: 400;
+    }
+  }
+}

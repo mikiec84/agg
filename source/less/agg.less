@@ -25,8 +25,10 @@
 @import "partials/_intro";
 @import "partials/_about";
 @import "partials/_portfolio";
+@import "partials/_resume";
 
 @body-bg-dark: shade(@body-bg, 40%);
+@body-bg-light: lighten(@body-bg, 15%);
 
 @btn-alt-color:              #fff;
 @btn-alt-bg:                 @body-bg-dark;
@@ -39,7 +41,7 @@ body {
 section {
   position: relative;
   min-height: 600px;
-  padding: 15px;
+  padding: 60px 15px;
   h2 {
     margin-top: 0;
   }
