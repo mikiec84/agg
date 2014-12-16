@@ -14,7 +14,8 @@ requirejs.config({
     'templates': 'templates',
     'moment': 'moment/min/moment.min',
     'utils': 'js/utils',
-    'slick': 'slick.js/slick/slick.min'
+    'slick': 'slick.js/slick/slick.min',
+    'velocity':'velocity/velocity.min'
   },
   shim: {
     'jquery.bs': ['jquery'],
