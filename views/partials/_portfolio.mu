@@ -1,4 +1,6 @@
-<section id="portfolio" class="portfolio">
-  <h2>Projects</h2>
-  <div class="portfolio-slider"></div>
+<section id="projects" class="portfolio">
+  <div class="container-fluid">
+    <h2>Projects</h2>
+    <div class="portfolio-slider"></div>
+  </div>
 </section>
