@@ -3,5 +3,6 @@
 /bower_components
 /public/stylesheets/*.css
 /views/dot
+/source-images
 
 npm-debug.log

@@ -11,10 +11,7 @@
       "Evernote Authentication via OAuth"
     ],
     "images": [
-      "evernote1.png",
-      "evernote2.png",
-      "evernote3.png",
-      "evernote4.png"
+      "evernote-screens.gif"
     ],
     "url": "/"
   },
@@ -48,7 +45,7 @@
       "Issues link directly back to Jira"
     ],
     "images": [
-      "edwin.png"
+      "edwin-screens.gif"
     ],
     "url": "/"
   },
@@ -65,9 +62,7 @@
       "Read full articles inline and add comments"
     ],
     "images": [
-      "fnb1.png",
-      "fnb2.png",
-      "fnb3.png"
+      "fnb-screens.gif"
     ],
     "url": "/"
   }
