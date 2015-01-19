@@ -1,4 +1,6 @@
 // Portfolio Section
+@slickBtnW: 35px;
+
 .portfolio {
   @text: #070709;
   background-color: lighten(@body-bg, 70%);
@@ -97,6 +99,41 @@
     }
     .feature {
       padding-left: 24px;
+    }
+  }
+  .portfolio {
+    .slick-prev,
+    .slick-next {
+      .square(@slickBtnW);
+      display: block;
+      top: -36px;
+      background: transparent;
+      z-index: 10;
+      .opacity(.4);
+      .lh-transition(opacity .2s ease);
+      &:hover {
+        .opacity(1);
+      }
+      &:before {
+        .fa-icon();
+        font-size: @slickBtnW;
+        color: @body-bg;
+      }
+    }
+
+    .slick-prev {
+      left: 50%;
+      margin-left: -@slickBtnW;
+      &:before {
+        content: @fa-var-angle-left;
+      }
+    }
+    .slick-next {
+      right: 50%;
+      margin-right: -@slickBtnW;
+      &:before {
+        content: @fa-var-angle-right;
+      }
     }
   }
 }
