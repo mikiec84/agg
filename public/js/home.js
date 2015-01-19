@@ -48,6 +48,7 @@ define([
 
   agg.prototype.initEventListeners = function () {
     $('.main-nav a').on('click', this.onNavClick.bind(this));
+    $('.navbar-brand').on('click', this.onNavClick.bind(this));
   };
 
 //TODO move this to a navigation view or just a main app view
@@ -55,7 +56,8 @@ define([
     e.preventDefault();
     var $btn = $(e.currentTarget),
         href = $btn.attr('href'),
-        sectionTop = $('#' + href.replace('/', '')).offset().top,
+        $section = $('#' + href.replace('/', '')),
+        sectionTop = $section.length ? $section.offset().top : 0,
         scrollPos = Math.ceil(sectionTop - this.navPadding) + 'px';
 
     $btn.blur();
