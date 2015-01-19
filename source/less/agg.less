@@ -6,6 +6,11 @@
 @import "vendor/bootswatch-superhero-variables";
 
 // App Variables
+@body-bg-dark: shade(@body-bg, 40%);
+@body-bg-light: lighten(@body-bg, 15%);
+@btn-alt-color: #fff;
+@btn-alt-bg: @body-bg-dark;
+@btn-alt-border: darken(@body-bg-dark, 5%);
 
 // Mixins
 @import "vendor/lessHat";
@@ -20,69 +25,10 @@
 @import "vendor/slick";
 
 // Sections
-@import "partials/_home";
+@import "partials/_base";
 @import "partials/_navbar";
 @import "partials/_intro";
 @import "partials/_about";
 @import "partials/_portfolio";
 @import "partials/_resume";
-
-@body-bg-dark: shade(@body-bg, 40%);
-@body-bg-light: lighten(@body-bg, 15%);
-
-@btn-alt-color:              #fff;
-@btn-alt-bg:                 @body-bg-dark;
-@btn-alt-border:             darken(@body-bg-dark, 5%);
-
-body {
-  padding-top: 40px;
-}
-
-section {
-  position: relative;
-  min-height: 600px;
-  padding: 60px 15px;
-  h2 {
-    margin-top: 0;
-  }
-}
-
-em, strong {
-  font-weight: 300;
-  color: @brand-primary;
-}
-
-// Override the default text hightlight color
-.lh-selection(~'color: #e0e950; background: #25262e');
-
-// Buttons
-.btn-alt {
-  .button-variant(@btn-alt-color; @btn-alt-bg; @btn-alt-border);
-}
-
-// Loading Stuff
-.loading {
-  display: block;
-
-  .spinner {
-    display: block;
-    .square(18px);
-    margin: 0 auto;
-    border: 2px solid transparent;
-    border-top-color: @brand-info;
-    border-left-color: @brand-info;
-    border-radius: 50%;
-
-    .animation(loading-spinner 800ms linear infinite);
-  }
-}
-
-@-webkit-keyframes loading-spinner {
-  0%   { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
-}
-@keyframes loading-spinner {
-  0%   { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
+@import "partials/_footer";

@@ -3,6 +3,20 @@
   @text: #070709;
   background-color: lighten(@body-bg, 70%);
   color: @text;
+
+  .slick-dots {
+    text-align: right;
+    top: -34px;
+    bottom: inherit;
+    li button:before {
+      font-size: 8px;
+    }
+  }
+
+  .slick-prev,
+  .slick-next {
+    display: none;
+  }
 }
 
 .project {

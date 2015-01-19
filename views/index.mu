@@ -6,6 +6,7 @@
 {{> about}}
 {{> portfolio}}
 {{> resume}}
+{{> footer}}
 
 {{#yield-scripts}}
   <script>
