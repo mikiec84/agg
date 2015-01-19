@@ -7,6 +7,7 @@
     <meta name="description" content="Adam Gruber, a developer with an extensive background in design and a passion for great creative and clean semantic code.">
     <meta name="keywords" content="HTML, CSS, JS, JavaScript, front-end, frontend, web development">
     <meta name="author" content="Adam Gruber">
+    <link rel="shortcut icon" href="/favicon.ico" />
     <title>{{title}}</title>
     {{{yield-styles}}}
     <script src="js/modernizr.min.js" type="text/javascript"></script>
