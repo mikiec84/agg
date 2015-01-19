@@ -1,6 +1,6 @@
 {
   "skills": {
-    "develop": ["HTML", "CSS", "JavaScript", "Node.js", "Express", "Backbone", "jQuery", "Agile", "Scrum"],
+    "develop": ["HTML", "CSS/Less/Sass", "JavaScript", "Node.js", "Express", "Backbone", "jQuery", "Agile", "Scrum"],
     "design": ["Photoshop", "InDesign", "Illustrator", "AfterEffects", "QuarkXPress"]
   },
   "experience": [{

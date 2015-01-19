@@ -16,7 +16,7 @@
         </div>
         <!-- Skills -->
         <div class="resume-wrap skills">
-          <h3 class="resume-section-header">Technologies</h3>
+          <h3 class="resume-section-header">Skills / Technologies</h3>
           <div class="row">
             <div class="col-xs-6">
               <h4>Develop</h4>
