@@ -46,10 +46,6 @@ define([
     });
   };
 
-  agg.prototype.onResize = function (e) {
-    console.log(e);
-  };
-
   agg.prototype.initEventListeners = function () {
     $('.main-nav a').on('click', this.onNavClick.bind(this));
   };

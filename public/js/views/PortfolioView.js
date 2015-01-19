@@ -4,7 +4,7 @@ define([
   'jquery',
   'slick'
 ], function(Backbone, ProjectView, $) {
-  var PortfolioView = Backbone.View.extend({
+  return Backbone.View.extend({
 
     initialize: function (options) {
       this.options = options;
@@ -34,5 +34,4 @@ define([
     }
 
   });
-  return PortfolioView;
 });

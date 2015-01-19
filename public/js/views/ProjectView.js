@@ -3,11 +3,9 @@ define([
   'jquery',
   'slick'
 ], function(Backbone, $) {
-  var ProjectView = Backbone.View.extend({
+  return Backbone.View.extend({
 
-    events: {
-      'click': 'onClick'
-    },
+    events: {},
 
     initialize: function (options) {
       this.options = options;
@@ -18,26 +16,12 @@ define([
     },
 
     render: function () {
-      var project = this.model.toJSON();
-      var $html = $(this.projectTmpl(project));
+      var project = this.model.toJSON(),
+          $html = $(this.projectTmpl(project));
       this.setElement($html);
       this.$parentEl.slickAdd($html);
-      // this.$el.find('.project-images-cnt').slick({
-      //   swipe: false,
-      //   // adaptiveHeight: true,
-      //   autoplay: true,
-      //   fade: true,
-      //   dots: false,
-      //   draggable: false
-      // });
-
       return this;
-    },
-
-    onClick: function (e) {
-      console.log(e.currentTarget);
     }
 
   });
-  return ProjectView;
 });

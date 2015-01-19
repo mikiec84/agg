@@ -3,7 +3,7 @@ define([
   'underscore',
   './ProjectModel'
 ], function(Backbone, _, ProjectModel) {
-  var PortfolioCollection = Backbone.Collection.extend({
+  return Backbone.Collection.extend({
 
     model: ProjectModel,
     
@@ -13,6 +13,4 @@ define([
     }
 
   });
-
-  return PortfolioCollection;
 });

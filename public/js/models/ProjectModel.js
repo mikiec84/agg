@@ -1,18 +1,6 @@
 define([
-  'backbone',
-  'templates',
-  'jquery'
-], function(Backbone, Handlebars, $) {
-  var ProjectModel = Backbone.Model.extend({
-    defaults: {
-      name: '',
-      description: '',
-      thumbImageUrl: '',
-      code: true,
-      design: true,
-      url: ''
-    }
-
+  'backbone'
+], function(Backbone) {
+  return Backbone.Model.extend({
   });
-  return ProjectModel;
 });
