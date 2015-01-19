@@ -17,7 +17,8 @@ exports.index = function(req, res, next) {
           {title: 'Resume', href: '/resume'}
         ]
       },
-      resume: resume
+      resume: resume,
+      copyrightYear: new Date().getFullYear()
     });
   } else {
     return next();
