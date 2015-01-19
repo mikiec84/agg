@@ -1,7 +1,9 @@
+/*global document*/
 define([
   'jquery',
   'pnotify'
 ], function ($, PNotify) {
+  'use strict';
   var Utils = {
     // Return the document's cookies as an object of name/value pairs.
     // Assume that cookie values are encoded with encodeURIComponent().
@@ -9,15 +11,15 @@ define([
       var cookies = {},
           all = document.cookie;
 
-      if (all === "") {
+      if (all === '') {
         return cookies;
       }
 
       // Split into individual name=value pairs
-      var list = all.split("; ");
+      var list = all.split('; ');
       for (var i = 0; i < list.length; i++) {
         var cookie = list[i],
-            p = cookie.indexOf("="),
+            p = cookie.indexOf('='),
             name = cookie.substring(0,p),
             value = cookie.substring(p+1);
         
@@ -28,9 +30,8 @@ define([
     },
 
     setCookie: function (name, value, maxAge) {
-      var cookies = this.getCookies(),
-          defaultMaxAge = 315360000,
-          cookie = name + '=' + value + ";max-age=" + (maxAge ? maxAge : defaultMaxAge);
+      var defaultMaxAge = 315360000,
+          cookie = name + '=' + value + ';max-age=' + (maxAge ? maxAge : defaultMaxAge);
       document.cookie = cookie;
     },
 

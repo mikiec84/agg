@@ -10,6 +10,7 @@ define([
   'templates',
   'velocity'
 ], function(Backbone, PortfolioCollection, PortfolioView, Moment, Handlebars, $) {
+  'use strict';
 
   var agg = function () {
     // Selectors
@@ -26,7 +27,8 @@ define([
 
     // Create Model/View Instances
     var portfolioCollection = new PortfolioCollection();
-    var portfolioView = new PortfolioView({
+    
+    new PortfolioView({
       collection: portfolioCollection,
       el: $('.portfolio-slider'),
       templates: this.templates
