@@ -1,4 +1,20 @@
 // About Section
 .about {
   background: @body-bg-dark;
+  img {
+    float: right;
+    border-radius: 50%;
+    border: 4px solid @body-bg-light;
+    height: 124px;
+    margin-left: 10px;
+  }
+}
+
+// Tablet 768px and up
+@media (min-width: @screen-sm-min) {
+  .about {
+    img {
+      height: 220px;
+    }
+  }
 }
