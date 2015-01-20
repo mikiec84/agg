@@ -15,11 +15,34 @@ em, strong {
   color: @brand-primary;
 }
 
+.ag-logo {
+  .square(180px);
+  text-align: center;
+  font-size: 90px;
+  font-weight: 600;
+  border-radius: 50%;
+  border: 6px solid @brand-primary;
+  line-height: 152px;
+  margin: 0 auto 40px auto;
+  color: @brand-primary;
+  box-shadow: 0 0 8px 2px fade(@body-bg-dark, 90);
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAKCAYAAAB4zEQNAAAAPElEQVQYV2NUVdP7zwAFElJyDC+ePYJxGRhhkjAJZAVgSXQdMD5+SVsHn//I9iDbz4hXknw7CXoFVyAAADXfP1seP+YXAAAAAElFTkSuQmCC);
+  .a {
+    margin-left: -2px;
+  }
+  .g {
+    margin-left: -6px;
+  }
+}
+
 // Tablet 768px and up
 @media (min-width: @screen-sm-min) {
   section {
     min-height: 600px;
     padding: 40px 15px;
+  }
+  .ag-logo {
+    margin: 60px auto 40px auto;
   }
 }
 

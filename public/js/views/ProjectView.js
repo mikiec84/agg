@@ -1,7 +1,6 @@
 define([
   'backbone',
-  'jquery',
-  'slick'
+  'jquery'
 ], function(Backbone, $) {
   return Backbone.View.extend({
 
@@ -20,6 +19,7 @@ define([
           $html = $(this.projectTmpl(project));
       this.setElement($html);
       this.$parentEl.slickAdd($html);
+      this.parentView.trigger('projectRendered');
       return this;
     }
 

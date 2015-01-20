@@ -13,12 +13,13 @@ requirejs.config({
     'handlebars': 'handlebars/handlebars.runtime.min',
     'templates': 'templates',
     'moment': 'moment/min/moment.min',
-    'utils': 'js/utils',
     'slick': 'slick.js/slick/slick.min',
     'velocity':'velocity/velocity.min'
   },
   shim: {
     'jquery.bs': ['jquery'],
-    'templates': ['handlebars']
+    'templates': ['handlebars'],
+    'slick': ['jquery'],
+    'velocity': ['jquery']
   }
 });
