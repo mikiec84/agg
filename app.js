@@ -1,17 +1,15 @@
-var express = require('express');
-var path = require('path');
-var favicon = require('serve-favicon');
-var logger = require('morgan');
-var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
+var express        = require('express'),
+    path           = require('path'),
+    favicon        = require('serve-favicon'),
+    logger         = require('morgan'),
+    cookieParser   = require('cookie-parser'),
+    bodyParser     = require('body-parser'),
+    lessMiddleware = require('less-middleware'),
+    config         = require('./config');
 
-var lessMiddleware = require('less-middleware');
-var config = require('./config');
-
-var app = express();
-var router = require('./router');
-
-var bootstrapPath = path.join(__dirname, 'bower_components', 'bootstrap');
+var app = express(),
+    router = require('./router'),
+    bootstrapPath = path.join(__dirname, 'bower_components', 'bootstrap');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -83,10 +81,26 @@ if (app.get('env') === 'development') {
 // production error handler
 // no stacktraces leaked to user
 app.use(function(err, req, res, next) {
-  res.status(err.status || 500);
-  res.render('error', {
-    message: err.message,
-    error: {}
+  app.use(function(err, req, res, next) {
+    if (err && err.status === 404) {
+      res.status(404);
+      res.render('404', {
+        title: 'ADAM GRUBER',
+        nav: {
+          sections: [
+            {title: 'About', href: '/about'},
+            {title: 'Projects', href: '/projects'},
+            {title: 'Resume', href: '/resume'}
+          ]
+        },
+      });
+    } else {
+      res.status(err.status || 500);
+      res.render('error', {
+        message: err.message,
+        error: {}
+      });
+    }
   });
 });
 

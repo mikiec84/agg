@@ -1,4 +1,3 @@
-/* global window*/
 define([
   'backbone',
   './views/AppView',
