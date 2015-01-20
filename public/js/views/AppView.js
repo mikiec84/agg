@@ -10,7 +10,8 @@ define([
   return Backbone.View.extend({
 
     events: {
-      'click .navbar a': 'onNavClick'
+      'click .navbar-brand': 'onNavClick',
+      'click .main-nav a': 'onNavClick'
     },
 
     initialize: function (options) {
