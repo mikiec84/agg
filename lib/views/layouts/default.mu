@@ -14,7 +14,6 @@
   <body class="{{bodyStyle}}">
     {{> navbar}}
     {{{yield}}}
-    <script src="requirejs/require.js"></script>
     {{{yield-scripts}}}
   </body>
 </html>

@@ -10,15 +10,14 @@ options = {
   paths: {
     lint: [
       './*.js',
-      './bin/*.js',
-      './routes/*.js',
+      './bin/*',
+      './lib/**/*.js',
       '!./node_modules/',
       '!./bower_components/',
     ],
     felint: [
-      './public/js/**.js',
-      '!./public/js/common.js',
-      '!./public/js/modernizr.min.js',
+      './browser/**/*.js',
+      '!./public/js/',
       '!./node_modules/',
       '!./bower_components/',
     ]

@@ -2,12 +2,8 @@
   "verbose": true,
   "watch": [
     "bin/",
-    "routes/",
-    "views/",
     "app.js",
-    "config.js",
-    "router.js",
-    "projects.json"
+    "lib/"
   ],
   "ignore": [
   ],

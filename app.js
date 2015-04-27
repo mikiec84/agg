@@ -5,14 +5,14 @@ var express        = require('express'),
     cookieParser   = require('cookie-parser'),
     bodyParser     = require('body-parser'),
     lessMiddleware = require('less-middleware'),
-    config         = require('./config');
+    config         = require('./lib/config');
 
 var app = express(),
-    router = require('./router'),
+    router = require('./lib/router'),
     bootstrapPath = path.join(__dirname, 'bower_components', 'bootstrap');
 
 // view engine setup
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, 'lib', 'views'));
 app.set('view engine', 'mu');
 app.set('layout', 'layouts/default');
 app.set('partials', config.partials);
@@ -40,7 +40,7 @@ app.use(lessMiddleware(path.join(__dirname, 'source', 'less'), {
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'bower_components')));
 app.use('/fonts', express.static(path.join(bootstrapPath, 'fonts')));
-app.use('/templates', express.static(path.join(__dirname, 'views', 'templates')));
+app.use('/templates', express.static(path.join(__dirname, 'lib', 'views', 'templates')));
 app.use(router);
 
 /// catch 404 and forward to error handler
@@ -58,16 +58,7 @@ if (app.get('env') === 'development') {
   app.use(function(err, req, res, next) {
     if (err && err.status === 404) {
       res.status(404);
-      res.render('404', {
-        title: 'ADAM GRUBER',
-        nav: {
-          sections: [
-            {title: 'About', href: '/about'},
-            {title: 'Projects', href: '/projects'},
-            {title: 'Resume', href: '/resume'}
-          ]
-        },
-      });
+      res.render('404', config.mainPage);
     } else {
       res.status(err.status || 500);
       res.render('error', {
@@ -84,16 +75,7 @@ app.use(function(err, req, res, next) {
   app.use(function(err, req, res, next) {
     if (err && err.status === 404) {
       res.status(404);
-      res.render('404', {
-        title: 'ADAM GRUBER',
-        nav: {
-          sections: [
-            {title: 'About', href: '/about'},
-            {title: 'Projects', href: '/projects'},
-            {title: 'Resume', href: '/resume'}
-          ]
-        },
-      });
+      res.render('404', config.mainPage);
     } else {
       res.status(err.status || 500);
       res.render('error', {
