@@ -1,4 +1,16 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+/*global window, $*/
+'use strict';
+window.jQuery = window.$ = require('jquery');
+var Backbone = require('backbone'),
+    AppView = require('./views/AppView');
+
+Backbone.$ = window.$;
+
+new AppView({
+  el: $('html')
+});
+},{"./views/AppView":6,"backbone":10,"jquery":20}],2:[function(require,module,exports){
 /*
      _ _      _       _
  ___| (_) ___| | __  (_)___
@@ -2117,7 +2129,7 @@
 
 }));
 
-},{"jquery":20}],2:[function(require,module,exports){
+},{"jquery":20}],3:[function(require,module,exports){
 /*! VelocityJS.org (1.2.2). (C) 2014 Julian Shapiro. MIT @license: en.wikipedia.org/wiki/MIT_License */
 
 /*************************
@@ -5986,19 +5998,7 @@ return function (global, window, document, undefined) {
 /* The CSS spec mandates that the translateX/Y/Z transforms are %-relative to the element itself -- not its parent.
 Velocity, however, doesn't make this distinction. Thus, converting to or from the % unit with these subproperties
 will produce an inaccurate conversion value. The same issue exists with the cx/cy attributes of SVG circles and ellipses. */
-},{}],3:[function(require,module,exports){
-/*global window, $*/
-'use strict';
-window.jQuery = window.$ = require('jquery');
-var Backbone = require('backbone'),
-    AppView = require('./views/AppView');
-
-Backbone.$ = window.$;
-
-new AppView({
-  el: $('html')
-});
-},{"./views/AppView":6,"backbone":10,"jquery":20}],4:[function(require,module,exports){
+},{}],4:[function(require,module,exports){
 /*global module*/
 'use strict';
 var Backbone = require('backbone'),
@@ -6107,7 +6107,7 @@ module.exports = Backbone.View.extend({
   }
 
 });
-},{"../../bower_components/slick.js/slick/slick":1,"../../bower_components/velocity/velocity":2,"../models/PortfolioCollection":4,"./PortfolioView":7,"backbone":10}],7:[function(require,module,exports){
+},{"../../bower_components/slick.js/slick/slick":2,"../../bower_components/velocity/velocity":3,"../models/PortfolioCollection":4,"./PortfolioView":7,"backbone":10}],7:[function(require,module,exports){
 'use strict';
 var Backbone = require('backbone'),
     ProjectView = require('./ProjectView');
@@ -19314,4 +19314,4 @@ return jQuery;
 
 }));
 
-},{}]},{},[3]);
+},{}]},{},[1]);

@@ -9,5 +9,6 @@
 {{> footer}}
 
 {{#yield-scripts}}
-    <script src="js/bundle.js"></script>
+  {{#isDev}}<script src="js/bundle.js"></script>{{/isDev}}
+  {{^isDev}}<script src="js/bundle.min.js"></script>{{/isDev}}
 {{/yield-scripts}}
