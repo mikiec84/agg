@@ -9,11 +9,6 @@
 {{> footer}}
 
 {{#yield-scripts}}
-  <script>
-    require(['js/common'], function (common) {
-      require(['js/home'], function (App) {
-        new App();
-      });
-    });
-  </script>
+  {{#isDev}}<script src="js/bundle.js"></script>{{/isDev}}
+  {{^isDev}}<script src="js/bundle.min.js"></script>{{/isDev}}
 {{/yield-scripts}}
