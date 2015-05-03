@@ -72,18 +72,16 @@ if (app.get('env') === 'development') {
 // production error handler
 // no stacktraces leaked to user
 app.use(function(err, req, res, next) {
-  app.use(function(err, req, res, next) {
-    if (err && err.status === 404) {
-      res.status(404);
-      res.render('404', config.mainPage);
-    } else {
-      res.status(err.status || 500);
-      res.render('error', {
-        message: err.message,
-        error: {}
-      });
-    }
-  });
+  if (err && err.status === 404) {
+    res.status(404);
+    res.render('404', config.mainPage);
+  } else {
+    res.status(err.status || 500);
+    res.render('error', {
+      message: err.message,
+      error: {}
+    });
+  }
 });
 
 // var httpPort = (parseInt(process.env.PORT) || 45100);
