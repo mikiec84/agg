@@ -69,6 +69,7 @@
   "worker"        : false,    // Web Workers
   "wsh"           : false,    // Windows Scripting Host
   "yui"           : false,    // Yahoo User Interface
+  "browserify"    : true,     // Browserify
 
   // Custom Globals
   "globals": {
