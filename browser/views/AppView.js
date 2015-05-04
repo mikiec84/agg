@@ -11,7 +11,8 @@ module.exports = Backbone.View.extend({
 
   events: {
     'click .navbar-brand': 'onNavClick',
-    'click .main-nav a': 'onNavClick'
+    'click .main-nav a': 'onNavClick',
+    'click .intro-btn': 'onNavClick'
   },
 
   initialize: function (options) {

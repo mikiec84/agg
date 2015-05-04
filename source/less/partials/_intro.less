@@ -1,34 +1,35 @@
 // Intro Section
 .intro {
+  height: 100%;
+  padding: 0;
   text-align: center;
+
+  .centerer {
+    position: absolute;
+    padding: 0 10px;
+    width: 100%;
+    top: 42%;
+    .translate(0, -60%);
+  }
 
   h2 {
     font-size: 28px;
-    margin: 0 0 100px 0;
+    margin: 0;
   }
 
   .intro-btn {
-    @btn-h: 40px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
     padding: 0;
-    height: @btn-h;
-    overflow: hidden;
     font-weight: 400;
-    border-radius: 4px;
     line-height: 1;
-    .lh-transition(background .2s ease);
-    span {
-      position: relative;
-      top: 0;
-      padding: 8px 24px;
-      display: block;
-      .lh-transition(all .2s ease);
-    }
+    color: @body-bg-dark;
+    text-decoration: none;
+    .lh-transition(color .2s ease);
     &:hover {
-      background-color: @brand-primary;
-      span {
-        color: @body-bg-dark;
-        top: -(@btn-h - 5);
-      }
+      color: @brand-primary;
     }
   }
 }
@@ -36,10 +37,10 @@
 // Tablet 768px and up
 @media (min-width: @screen-sm-min) {
   .intro {
+    min-height: 0;
     h2 {
       font-size: 32px;
-      margin: 0 auto 100px auto;
-      max-width: 600px;
+      margin: 0 auto;
     }
   }
 }
