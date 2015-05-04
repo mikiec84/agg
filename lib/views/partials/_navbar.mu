@@ -6,13 +6,13 @@
     <nav class="" role="navigation">
       <ul class="nav navbar-nav main-nav hidden-xs">
         {{#nav.sections}}
-          <li><a href="{{href}}">{{title}}</a></li>
+          <li><a href="{{href}}" id="{{title}}">{{title}}</a></li>
         {{/nav.sections}}
       </ul>
       <ul class="nav navbar-nav navbar-right secondary-nav">
-        <li class="ext-link"><a href="//github.com/adamgruber" target="_blank"><i class="fa fa-2x fa-github-square"></i></a></li>
-        <li class="ext-link"><a href="//twitter.com/talknmime" target="_blank"><i class="fa fa-2x fa-twitter-square"></i></a></li>
-        <li class="ext-link"><a href="//linkedin.com/pub/adam-gruber/35/60a/4b2" target="_blank"><i class="fa fa-2x fa-linkedin-square"></i></a></li>
+        <li class="ext-link"><a href="//github.com/adamgruber" id="github" target="_blank"><i class="fa fa-2x fa-github-square"></i></a></li>
+        <li class="ext-link"><a href="//twitter.com/talknmime" id="twitter" target="_blank"><i class="fa fa-2x fa-twitter-square"></i></a></li>
+        <li class="ext-link"><a href="//linkedin.com/pub/adam-gruber/35/60a/4b2" id="linkedin" target="_blank"><i class="fa fa-2x fa-linkedin-square"></i></a></li>
         <li class="ext-link hidden"><a href=""><i class="fa fa-2x fa-envelope-square"></i></a></li>
       </ul>
     </nav>
