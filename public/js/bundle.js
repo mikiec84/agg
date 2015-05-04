@@ -6166,10 +6166,26 @@ module.exports = HandlebarsCompiler.template({"1":function(depth0,helpers,partia
     + this.escapeExpression(this.lambda(depth0, depth0))
     + "\" /></div>\n";
 },"3":function(depth0,helpers,partials,data) {
+    var stack1, helper, options, alias1=helpers.helperMissing, alias2="function", alias3=this.escapeExpression, buffer = 
+  "<a href=\""
+    + alias3(((helper = (helper = helpers.url || (depth0 != null ? depth0.url : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"url","hash":{},"data":data}) : helper)))
+    + "\" class=\"btn btn-default\" target=\"_blank\">";
+  stack1 = ((helper = (helper = helpers.icon || (depth0 != null ? depth0.icon : depth0)) != null ? helper : alias1),(options={"name":"icon","hash":{},"fn":this.program(4, data, 0),"inverse":this.noop,"data":data}),(typeof helper === alias2 ? helper.call(depth0,options) : helper));
+  if (!helpers.icon) { stack1 = helpers.blockHelperMissing.call(depth0,stack1,options)}
+  if (stack1 != null) { buffer += stack1; }
+  return buffer + alias3(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"title","hash":{},"data":data}) : helper)))
+    + "</a>";
+},"4":function(depth0,helpers,partials,data) {
+    var helper;
+
+  return "<i class=\""
+    + this.escapeExpression(((helper = (helper = helpers['class'] || (depth0 != null ? depth0['class'] : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0,{"name":"class","hash":{},"data":data}) : helper)))
+    + "\"></i> ";
+},"6":function(depth0,helpers,partials,data) {
     return "        <p class=\"description\">"
     + this.escapeExpression(this.lambda(depth0, depth0))
     + "</p>\n";
-},"5":function(depth0,helpers,partials,data) {
+},"8":function(depth0,helpers,partials,data) {
     return "          <li class=\"feature\">"
     + this.escapeExpression(this.lambda(depth0, depth0))
     + "</li>\n";
@@ -6180,15 +6196,18 @@ module.exports = HandlebarsCompiler.template({"1":function(depth0,helpers,partia
   if (!helpers.images) { stack1 = alias3.call(depth0,stack1,options)}
   if (stack1 != null) { buffer += stack1; }
   buffer += "    </div>\n    <div class=\"project-info-cnt\">  \n      <h3 class=\"project-name\">"
-    + alias4(((helper = (helper = helpers.projectName || (depth0 != null ? depth0.projectName : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"projectName","hash":{},"data":data}) : helper)))
-    + "</h3>\n      <p class=\"lead\">"
+    + alias4(((helper = (helper = helpers.projectName || (depth0 != null ? depth0.projectName : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"projectName","hash":{},"data":data}) : helper)));
+  stack1 = ((helper = (helper = helpers.link || (depth0 != null ? depth0.link : depth0)) != null ? helper : alias1),(options={"name":"link","hash":{},"fn":this.program(3, data, 0),"inverse":this.noop,"data":data}),(typeof helper === alias2 ? helper.call(depth0,options) : helper));
+  if (!helpers.link) { stack1 = alias3.call(depth0,stack1,options)}
+  if (stack1 != null) { buffer += stack1; }
+  buffer += "</h3>\n      <p class=\"lead\">"
     + alias4(((helper = (helper = helpers.summary || (depth0 != null ? depth0.summary : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"summary","hash":{},"data":data}) : helper)))
     + "</p>\n";
-  stack1 = ((helper = (helper = helpers.description || (depth0 != null ? depth0.description : depth0)) != null ? helper : alias1),(options={"name":"description","hash":{},"fn":this.program(3, data, 0),"inverse":this.noop,"data":data}),(typeof helper === alias2 ? helper.call(depth0,options) : helper));
+  stack1 = ((helper = (helper = helpers.description || (depth0 != null ? depth0.description : depth0)) != null ? helper : alias1),(options={"name":"description","hash":{},"fn":this.program(6, data, 0),"inverse":this.noop,"data":data}),(typeof helper === alias2 ? helper.call(depth0,options) : helper));
   if (!helpers.description) { stack1 = alias3.call(depth0,stack1,options)}
   if (stack1 != null) { buffer += stack1; }
   buffer += "      <ul class=\"list-unstyled features\">\n";
-  stack1 = ((helper = (helper = helpers.features || (depth0 != null ? depth0.features : depth0)) != null ? helper : alias1),(options={"name":"features","hash":{},"fn":this.program(5, data, 0),"inverse":this.noop,"data":data}),(typeof helper === alias2 ? helper.call(depth0,options) : helper));
+  stack1 = ((helper = (helper = helpers.features || (depth0 != null ? depth0.features : depth0)) != null ? helper : alias1),(options={"name":"features","hash":{},"fn":this.program(8, data, 0),"inverse":this.noop,"data":data}),(typeof helper === alias2 ? helper.call(depth0,options) : helper));
   if (!helpers.features) { stack1 = alias3.call(depth0,stack1,options)}
   if (stack1 != null) { buffer += stack1; }
   return buffer + "      </ul>\n    </div>\n  </div>\n</article>";

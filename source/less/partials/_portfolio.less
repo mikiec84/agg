@@ -54,6 +54,16 @@
 
   .project-name {
     font-weight: 400;
+    a {
+      float: right;
+      padding: 4px 12px;
+      color: @body-bg-dark;
+      background-color: fade(@body-bg-dark, 10%);
+      border-radius: 4px;
+      &:hover {
+        background-color: @brand-primary;
+      }
+    }
   }
 
   .description {

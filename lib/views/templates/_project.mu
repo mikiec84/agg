@@ -6,7 +6,7 @@
       {{/images}}
     </div>
     <div class="project-info-cnt">  
-      <h3 class="project-name">{{projectName}}</h3>
+      <h3 class="project-name">{{projectName}}{{#link}}<a href="{{url}}" class="btn btn-default" target="_blank">{{#icon}}<i class="{{class}}"></i> {{/icon}}{{title}}</a>{{/link}}</h3>
       <p class="lead">{{summary}}</p>
       {{#description}}
         <p class="description">{{.}}</p>

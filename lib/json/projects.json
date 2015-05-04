@@ -1,22 +1,5 @@
 [
   {
-    "projectName": "Factiva / Evernote Integration Demo",
-    "summary": "A prototype application built to explore possible workflow for integrating Evernote with Factiva.",
-    "description": [
-      "This proof-of-concept application shows how a Factiva user might save articles or selections to their Evernote account. Upon creating a new note, the user would then have access to a list of related notes from within their organization thus allowing them to research topics more efficiently and surface relevant content that might have otherwise been missed."
-    ],
-    "features": [
-      "Built on the Express.js framework for Node",
-      "RESTful API that hooks into Evernote's API",
-      "Evernote Authentication via OAuth"
-    ],
-    "images": [
-      "evernote-screens.gif"
-    ],
-    "url": "/"
-  },
-
-  {
     "projectName": "Mochawesome",
     "summary": "A custom reporter for the Javascript testing framework, mocha.",
     "description": [
@@ -29,6 +12,29 @@
     ],
     "images": [
       "mochawesome.png"
+    ],
+    "link": {
+      "url": "http://adamgruber.github.io/mochawesome",
+      "title": "View Site",
+      "iconx": {
+        "class": "fa fa-external-link"
+      }
+    }
+  },
+
+  {
+    "projectName": "Factiva / Evernote Integration Demo",
+    "summary": "A prototype application built to explore possible workflow for integrating Evernote with Factiva.",
+    "description": [
+      "This proof-of-concept application shows how a Factiva user might save articles or selections to their Evernote account. Upon creating a new note, the user would then have access to a list of related notes from within their organization thus allowing them to research topics more efficiently and surface relevant content that might have otherwise been missed."
+    ],
+    "features": [
+      "Built on the Express.js framework for Node",
+      "RESTful API that hooks into Evernote's API",
+      "Evernote Authentication via OAuth"
+    ],
+    "images": [
+      "evernote-screens.gif"
     ],
     "url": "/"
   },
