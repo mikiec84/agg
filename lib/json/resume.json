@@ -3,45 +3,61 @@
     "develop": ["HTML", "CSS/Less/Sass", "JavaScript", "Node.js", "Express", "Backbone", "jQuery", "Agile", "Scrum"],
     "design": ["Photoshop", "InDesign", "Illustrator", "AfterEffects", "QuarkXPress"]
   },
-  "experience": [{
-    "jobTitle": "Application Architect",
-    "company": "Dow Jones & Company, Inc.",
-    "location": "South Brunswick, NJ",
-    "dates": "September 2011 - Present",
-    "duties": [
-      "Front-end development including HTML/CSS/JS",
-      "Work with UX and design teams to ensure designs are upheld in development process",
-      "Design and develop prototype applications",
-      "Design and develop internal tools and utilities"
-    ]
-  }, {
-    "jobTitle": "Art Director",
-    "company": "Garfield",
-    "location": "Newtown, PA",
-    "dates": "May 2007 - June 2011",
-    "duties": [
-      "Designed and programmed websites, emails, banner ads, videos and Flash demos",
-      "Concepted and produced brand campaigns",
-      "Managed interns and freelancers",
-      "Provided internal technical support"
-    ]
-  }, {
-    "jobTitle": "Jr. Art Director",
-    "company": "MRM Princeton (Gillespie)",
-    "location": "Princeton, NJ",
-    "dates": "July 2005 - May 2007",
-    "duties": [
-      "Concepted and produced print ads, direct mail",
-      "Designed outdoor campaigns and corporate brochures"
-    ]
-  }, {
-    "jobTitle": "Graphic Designer",
-    "company": "MRM Princeton (Gillespie)",
-    "location": "Princeton, NJ",
-    "dates": "July 2003 - July 2005",
-    "duties": [
-      "Produced production-ready mechanicals and comps",
-      "Concepted and produced corporate marketing materials"
-    ]
-  }]
+  "experience": [
+    {
+      "jobTitle": "Application Architect",
+      "company": "Dow Jones & Company, Inc.",
+      "location": "South Brunswick, NJ",
+      "dates": "July 2013 - Present",
+      "duties": [
+        "Full-stack JS development",
+        "Work with UX and design teams to ensure designs are upheld in development process",
+        "Design and develop prototype applications",
+        "Design and develop internal tools and utilities"
+      ]
+    },
+    {
+      "jobTitle": "Sr. Interactive Developer",
+      "company": "Dow Jones & Company, Inc.",
+      "location": "South Brunswick, NJ",
+      "dates": "September 2011 - June 2013",
+      "duties": [
+        "Front-end development including HTML/CSS/JS",
+        "Research, refine and implement IA and UX",
+        "Design and develop prototype applications"
+      ]
+    },
+    {
+      "jobTitle": "Art Director",
+      "company": "Garfield",
+      "location": "Newtown, PA",
+      "dates": "May 2007 - June 2011",
+      "duties": [
+        "Designed and programmed websites, emails, banner ads, videos and Flash demos",
+        "Concepted and produced brand campaigns",
+        "Managed interns and freelancers",
+        "Provided internal technical support"
+      ]
+    },
+    {
+      "jobTitle": "Jr. Art Director",
+      "company": "MRM Princeton (Gillespie)",
+      "location": "Princeton, NJ",
+      "dates": "July 2005 - May 2007",
+      "duties": [
+        "Concepted and produced print ads, direct mail",
+        "Designed outdoor campaigns and corporate brochures"
+      ]
+    },
+    {
+      "jobTitle": "Graphic Designer",
+      "company": "MRM Princeton (Gillespie)",
+      "location": "Princeton, NJ",
+      "dates": "July 2003 - July 2005",
+      "duties": [
+        "Produced production-ready mechanicals and comps",
+        "Concepted and produced corporate marketing materials"
+      ]
+    }
+  ]
 }

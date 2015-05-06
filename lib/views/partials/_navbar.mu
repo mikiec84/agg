@@ -13,7 +13,7 @@
         <li class="ext-link"><a href="//github.com/adamgruber" id="github" target="_blank" title="Fork me."><i class="fa fa-2x fa-github-square"></i></a></li>
         <li class="ext-link"><a href="//twitter.com/talknmime" id="twitter" target="_blank" title="Follow me."><i class="fa fa-2x fa-twitter-square"></i></a></li>
         <li class="ext-link"><a href="//linkedin.com/pub/adam-gruber/35/60a/4b2" id="linkedin" target="_blank" title="Hire me."><i class="fa fa-2x fa-linkedin-square"></i></a></li>
-        <li class="ext-link hidden"><a href=""><i class="fa fa-2x fa-envelope-square"></i></a></li>
+        <li class="ext-link"><a href="#" id="email" title="Email me."><i class="fa fa-2x fa-envelope-square"></i></a></li>
       </ul>
     </nav>
   </div>

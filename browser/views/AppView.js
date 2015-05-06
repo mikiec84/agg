@@ -12,7 +12,8 @@ module.exports = Backbone.View.extend({
   events: {
     'click .navbar-brand': 'onNavClick',
     'click .main-nav a': 'onNavClick',
-    'click .intro-btn': 'onNavClick'
+    'click .intro-btn': 'onNavClick',
+    'click #email': 'onEmailClick'
   },
 
   initialize: function (options) {
@@ -63,6 +64,11 @@ module.exports = Backbone.View.extend({
     $btn.blur();
     Backbone.history.navigate(href);
     this.scrollToSection(href, true);
+  },
+
+  onEmailClick: function (e) {
+    e.preventDefault();
+    location.href = 'mailto:hi@adamgruber.com';
   },
 
   scrollToSection: function (section, animate) {
