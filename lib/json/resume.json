@@ -1,16 +1,17 @@
 {
   "skills": {
-    "develop": ["HTML", "CSS/Less/Sass", "JavaScript", "Node.js", "Express", "Backbone", "jQuery", "Agile", "Scrum"],
-    "design": ["Photoshop", "InDesign", "Illustrator", "AfterEffects", "QuarkXPress"]
+    "develop": ["HTML", "CSS/Less/Sass", "JavaScript", "Node.js", "Express/Koa", "React", "Backbone", "Agile", "Scrum"],
+    "design": ["Photoshop", "InDesign", "Illustrator"]
   },
   "experience": [
     {
       "jobTitle": "Application Architect",
       "company": "Dow Jones & Company, Inc.",
-      "location": "South Brunswick, NJ",
+      "location": "Princeton, NJ",
       "dates": "July 2013 - Present",
       "duties": [
         "Full-stack JS development",
+        "Scrum Master / Tech Lead",
         "Work with UX and design teams to ensure designs are upheld in development process",
         "Design and develop prototype applications",
         "Design and develop internal tools and utilities"
@@ -19,7 +20,7 @@
     {
       "jobTitle": "Sr. Interactive Developer",
       "company": "Dow Jones & Company, Inc.",
-      "location": "South Brunswick, NJ",
+      "location": "Princeton, NJ",
       "dates": "September 2011 - June 2013",
       "duties": [
         "Front-end development including HTML/CSS/JS",

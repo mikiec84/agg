@@ -1,7 +1,12 @@
 {{#resume}}
 <section id="resume" class="resume">
   <div class="container-fluid">
-    <h2>Resume</h2>
+    <div class="clearfix">
+      <h2 class="pull-left">Resume</h2>
+      <a href="AdamGruber_Resume2016.pdf" target="_blank" class="btn btn-default download-btn">
+        <i class="fa fa-file-pdf-o"></i> Download PDF
+      </a>
+    </div>
     <div class="row">
       <div class="col-sm-4">
         <!-- Education -->

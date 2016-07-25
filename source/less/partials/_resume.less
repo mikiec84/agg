@@ -29,6 +29,21 @@
     font-weight: 400;
   }
 
+  .download-btn {
+    display: none;
+    float: right;
+    padding: 4px 12px;
+    background-color: @body-bg-light;
+    border-radius: 4px;
+    &:hover {
+      color: @body-bg-dark;
+      background-color: @brand-primary;
+    }
+    i {
+      margin-right: 4px;
+    }
+  }
+
   .resume-list {
     margin-top: 10px;
   }
@@ -69,6 +84,9 @@
 // Tablet 768px and up
 @media (min-width: @screen-sm-min) {
   .resume {
+    .download-btn {
+      display: inline-block;
+    }
     .job-title {
       border-bottom: 1px solid @body-bg-light;
       padding-bottom: 3px;      
